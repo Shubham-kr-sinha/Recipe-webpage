@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    overflow-x: none;
+    
+    background-image: url(7584509.jpg);
+}
+
+nav{
+    width: 100%;
+    overflow-x: none;
+}
+
+.navContainer{
+    width: 100%;
+    background-color: #7c136e;
+    background-image: linear-gradient(90deg, #9b51a3 0%, #4c085b 100%);
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#navList{
+
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items:center;
+    
+}
+
+#navLogo{
+    font-size:4rem;  
+    color: white;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#navItems{
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    
+}
+
+.footerBox{
+    width: 100%;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #9b51a3 0%, #4c085b 100%);
+    text-align: center;
+    font-weight: bold;
+    height: 20px;
+}
+
+.contentBox{
+    width: 70%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 80px black ;
+    background-color: white;    
+}
+
+.item{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 50%;
+}
+
+
+.rightBox img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: all 0.5s linear 0s;
+}
+
+.rightBox:hover{
+    transform: scale(1.05);
+}
+
+.leftBox{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+h2{
+    font-size: 2rem;
+    
+}
+li{
+    font-style: oblique;
+}
+
+.rightBox .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(36, 32, 32, 0.713);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s ;
+}
+
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem ;
+}
